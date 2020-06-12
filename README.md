@@ -1,68 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Javascript ToDo APP</h1>
+DAs Ziel dieses Projektes war, das Programm von Herrn Locher ein TodoApp das in Vanila JS umgesetzt war, mithilfe eines Frameworkes umzusetzen. Ich habe mich für den Framework React entschieden. Der Hauptentscheidungsgrund war, das ich mich damit relativ schnell zurechtgefunden habe im vergleich zu Vue.js und Angular. <br>
+Das Hello World Tutorial habe ich relativ schnell erledigen können.<br>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Ich bin dann jedoch nicht mehr allzuviel dazu gekommen al Programm weiter zu arbeiten. Dies aufgrund der Arbeitslage bei uns in der KMU. Wir hatten dank der Corona Kriese noch mehr zu tun als vorher.<br>
+Als ich wieder zum weiterentwickeln kam, habe ich die Ordnerstrucktur nochmals überarbeitet.
+Anschliessend habe ich mich an den React Router gesetzt, dieser hat ziemlich viel Zeit in anspruch genommen, bis ich die genaue Funktionsweise und Umsetzung verstanden habe.<br>
+Anschliessend habe ich mich ans Login gemacht und hier fing das grosse Problem an.<br>
+Ich habe 3 Wochen lang versucht den HTTPWebRequest mit Axios umzusetzen.<br> Ich habe jeweils mithilfe der Konsole und dem Network von Chrome verfolgt was passiert und mich nach Lösungen umgesehen.<br>
+Nachdem ich es über eine Woche lang immerwieder mit verschiedenen Code Snippets von x Webseiten versucht habe den Axios Request erfolgreich durchzuführen. Habe ich mich dazu entscheiden einen 2ten Ansatz zu versuchen.<br>
+Ich habe anschliessend eine Woche lang veruscht mit Fetch den HTTP  Request zu machen. Hier habe ich auch wieder x Verschiedene Anleitungen aus dem WEB versucht durchzuführen und den Request erfolgreicht zu machen. <br> Als dies auch nicht funktioniert hat, habe ich versucht mit XMLHttpRequest den Request zu erstellen. Auch hier habe ich verschiedene Quellen im Internet in Betracht bezogen, auch hier habe ich fast 5 Tage jeweils am Abend damit verbacht den Request auszuführen.<br>
+Schlussentlich bin ich wieder beim Axios gelandet. Ich habe also wieder bei meinem Startproblemem angefangen. <br>
+Ich habe es nun hingebracht das ich den Webrequest mit dem Login erfolgreich abschliessen konnte. Ich habe also das Token zurückerhalten, dies jedoch auch nicht immer 100%, nun ging ich einen schritt weiter, ich habe versucht, den Axios Get Request für die Todos zu machen, dabei bin ich wieder auf die gleichen Probleme gestossen wie beim Axios Post Request. Heute bin ich daran verzweifelt und habe mic hdazu entschieden, nicht mehr Zeit für das Projekt aufzuwenden im Hinblick auf die Abschlussprüfungen.
