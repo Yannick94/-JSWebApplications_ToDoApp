@@ -23,22 +23,23 @@ class Todos extends React.Component{
 					</span>
 				</li>
 					{Store.getTodos.map((todo => {
-						return (<li key={todo.id}>{todo.id} <b>{todo.title}</b> {todo.dueDate}</li>)
+						if(todo.important && todo.completed){
+							return (<li key={todo.id} class='completed important'>{todo.id} <b>{todo.title}</b> {todo.dueDate}</li>)
+						}
+						if(todo.completed){
+							return (<li key={todo.id} class='completed'>{todo.id} <b>{todo.title}</b> {todo.dueDate}</li>)
+						}
+						if(todo.important){
+							return (<li key={todo.id} class='important'>{todo.id} <b>{todo.title}</b> {todo.dueDate}</li>)
+						}else{
+							return (<li key={todo.id}>{todo.id} <b>{todo.title}</b> {todo.dueDate}</li>)
+						}
+						
 					}))}
 				</ul>
 			</div>
 			);
         return (header);
-	}
-	
-	renderList(){
-		Store.getTodos.map((todo => {
-		const val = Object.values(todo)[0]}))
-		if(val.important){
-
-		}else if(val.completed){
-
-		}
 	}
 }
 
